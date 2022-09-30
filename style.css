@@ -2,15 +2,23 @@
     font-family: myFont;
     src: url(./fonts/Norse-Bold.otf);
 }
-
+input{
+    border: 1px solid;
+    border-color: #E5E7EB;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
-    flex: 1;
+    flex: 1 1;
 }
 
+label,input{
+    display: block;
+}
 
 .image-container{
     position: relative;
@@ -26,6 +34,7 @@ body {
 .main-content{
     min-width: 58%;
     display: flex;
+    flex-direction: column;
     flex: 1;
     /* border: 1px solid black; */
 }
@@ -40,8 +49,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .odin{
     max-width: 90%;
@@ -55,11 +62,63 @@ body {
     font-size: 6rem;
 }
 .credit{
-  background-color: rgba(0, 0, 0, 0.623);
-  position: absolute;
-  align-self: flex-end;
-  right: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    padding: 0.3rem;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    align-self: flex-end;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    padding-left: 1rem;
+    font-family: monospace, sans-serif;
+    font-weight: 100;
+}
+
+.link-to{
+    text-decoration: none;
+    color: aliceblue;  
+    padding-left: 1rem;
+}
+.link-to:hover{
+    color: rgba(137, 43, 226, 0.425);
+}
+button{
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #596D48;
+}
+.formBox{
+    padding: 1rem;
+    display: flex;
+    flex:1;
+}
+.form-container{
+    z-index: 1;
+    box-shadow: 0 5px 5px #ced0d3;
+    border-top: 2px solid #e5e7eb62;;
+    padding: 1rem;
+}
+.top-container{
+    background-color: rgba(255, 255, 255, 0.80);;
+    padding: 3rem 4rem 2rem 2rem;
+}
+.bot-container{
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 2rem;
+}
+p{
+    font-family: monospace, sans-serif;
+}
+.top-container > p{
+    font-size: 1rem;
+    font-weight: 550;
+}
+.bot-container > button{
+    color: #E5E7EB;
+    font-size: 1rem;
+    padding: 0.75rem 2.5rem;
 }

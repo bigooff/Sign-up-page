@@ -15,32 +15,48 @@
                 <img src="./imgs/New Piskel.png" alt="odin" class="odin">
                 <div class="logo">ODIN</div>
             </div>
-            <div class="credit">Image Credits to: <a href="">claire_foun</a></div>
+            <div class="credit">Image from<a class="link-to" href="">@claire_foun</a></div>
         </div>
     <!-- Right Side -->
     <div class="main-content">
         <div class="top-container">
-            <p></p>
-            <p></p>
+            <p>This is not a real online service!You know you need something <br> like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
         </div>
 
         <div class="form-container">
             <h2 class="form-head">Lets do this!</h2>
-            <form action="">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName">
 
-                <label for="userEmail">First Name</label>
-                <input type="email" name="userEmail" id="userEmail">
+            <form action="" class="formBox" id="formOne">
 
-                <label for="userPass">First Name</label>
-                <input type="password" name="userPass" id="userPass">
+                <div class="left-form-actions">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
 
+                    <label for="userEmail">Email:</label>
+                    <input type="email" name="userEmail" id="userEmail">
+
+                    <label for="userPass">Password:*</label>
+                    <input type="password" name="userPass" id="userPass" required>
+                </div>   
+
+                <div class="right-form-actions">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+
+                    <label for="userPhoneNumber">Phone Number:</label>
+                    <input type="tel" name="userPhoneNumber" id="userPhoneNumber">
+
+                    <label for="userPass">Confirm Password:*</label>
+                    <input type="password" name="userPass" id="userPass" required>
+                </div>
             </form>
+
         </div>
 
         <div class="bot-container">
-
+            <button form="formOne" type="submit">Create Account</button>
+            <p>Already have an account? <a href="" class="login">Log in</a></p>
         </div>
     </div>
     

@@ -70,6 +70,7 @@ label{
     font-size: 6rem;
 }
 .credit{
+    font-family: myFont;
     padding: 0.3rem;
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.623);
@@ -80,6 +81,9 @@ label{
     display: flex;
     justify-content: center;
 }
+.credit > a{
+    font-family: myFont;
+}
 h2{
     padding-left: 1rem;
     font-family: monospace, sans-serif;
@@ -89,7 +93,7 @@ h2{
 .link-to{
     text-decoration: none;
     color: aliceblue;  
-    padding-left: 1rem;
+    padding-left: 0.25rem;
 }
 .link-to:hover{
     color: rgba(137, 43, 226, 0.425);

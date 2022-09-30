@@ -30,32 +30,32 @@
             <form action="" class="formBox" id="formOne">
 
                 <div class="left-form-actions">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" id="firstName">
+                    <label for="firstName">First Name</label>
+                    <input maxlength="10" type="text" name="firstName" id="firstName">
 
-                    <label for="userEmail">Email:</label>
+                    <label for="userEmail">Email</label>
                     <input type="email" name="userEmail" id="userEmail">
 
-                    <label for="userPass">Password:*</label>
-                    <input type="password" name="userPass" id="userPass" required>
+                    <label for="userPass">Password*</label>
+                    <input type="password" name="userPass" id="userPass" required class="error">
                 </div>   
 
                 <div class="right-form-actions">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName">
+                    <label for="lastName">Last Name</label>
+                    <input maxlength="10" type="text" name="lastName" id="lastName">
 
-                    <label for="userPhoneNumber">Phone Number:</label>
-                    <input type="tel" name="userPhoneNumber" id="userPhoneNumber">
+                    <label for="userPhoneNumber">Phone Number</label>
+                    <input maxlength="16" type="tel" name="userPhoneNumber" id="userPhoneNumber" pattern="[0-9]*">
 
-                    <label for="userPass">Confirm Password:*</label>
-                    <input type="password" name="userPass" id="userPass" required>
+                    <label for="userPass">Confirm Password*</label>
+                    <input type="password" name="userPass" id="userPass" required class="error">
                 </div>
             </form>
 
         </div>
 
         <div class="bot-container">
-            <button form="formOne" type="submit">Create Account</button>
+            <button form="formOne" type="submit" class="createBtn">Create Account</button>
             <p>Already have an account? <a href="" class="login">Log in</a></p>
         </div>
     </div>

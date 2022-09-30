@@ -2,12 +2,7 @@
     font-family: myFont;
     src: url(./fonts/Norse-Bold.otf);
 }
-input{
-    border: 1px solid;
-    border-color: #E5E7EB;
-    border-radius: 0.2rem;
-    padding: 0.3rem;
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,9 +10,22 @@ body {
     display: flex;
     flex: 1 1;
 }
+input{
+    outline: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
+input:focus{
+    border-color: blue;
+    box-shadow: 1px 2px 5px black;
+}
 
-label,input{
+label{
     display: block;
+    font-weight: 100;
+    margin: 0.2rem;
+    font-family: monospace, sans-serif;
 }
 
 .image-container{
@@ -95,6 +103,7 @@ button{
     padding: 1rem;
     display: flex;
     flex:1;
+    gap: 5rem;
 }
 .form-container{
     z-index: 1;
@@ -103,16 +112,18 @@ button{
     padding: 1rem;
 }
 .top-container{
-    background-color: rgba(255, 255, 255, 0.80);;
+    background-color: rgba(255, 255, 255, 0.60);;
     padding: 3rem 4rem 2rem 2rem;
 }
 .bot-container{
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.60);
     padding: 2rem;
 }
+
 p{
     font-family: monospace, sans-serif;
 }
+
 .top-container > p{
     font-size: 1rem;
     font-weight: 550;
@@ -121,4 +132,15 @@ p{
     color: #E5E7EB;
     font-size: 1rem;
     padding: 0.75rem 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.createBtn:hover{
+    background-color: #415035;
+}
+.createBtn:focus{
+    background-color: #283120;
+}
+.error:invalid:focus{
+    border-color: red;
 }

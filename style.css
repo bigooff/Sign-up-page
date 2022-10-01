@@ -18,7 +18,7 @@ input{
 }
 input:focus{
     border-color: blue;
-    box-shadow: 1px 2px 5px black;
+    box-shadow: 1px 1px 4px black;
 }
 
 label{
@@ -110,8 +110,9 @@ button{
     gap: 5rem;
 }
 .form-container{
+    
     z-index: 1;
-    box-shadow: 0 5px 5px #ced0d3;
+    box-shadow: 0 5px 5px -2px #ced0d3;
     border-top: 2px solid #e5e7eb62;;
     padding: 1rem;
 }
